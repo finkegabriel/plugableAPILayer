@@ -1,12 +1,10 @@
 var mysql = require('mysql-node');
 
-module.exports = {
-User,
+var User,
 Password,
 Host,
 Database,
-Port  
-}
+Port  ;
 
 const dbConfig = {
     user: User,
@@ -20,6 +18,18 @@ const dbConfig = {
     host: Host,
     user: User,
     password: Password,
-    database: Dtabase,
+    database: Database,
   });
 
+  module.exports = {
+    User,
+    Password,
+    Host,
+    Database,
+    Port,
+  }
+  
+con.connect(function(err){
+  if(err) throw err;
+  console.log("Connected!");
+});
