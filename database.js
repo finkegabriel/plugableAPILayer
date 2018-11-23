@@ -4,27 +4,22 @@ var User,
 Password,
 Host,
 Database,
-Port  ;
+Port;
 
-const dbConfig = {
-    user: User,
-    password: Password,
-    database: Database,
-    host: Host,
-    port: Port,
-  };
-
-  var con = mysql.createConnection({
-    host: Host,
-    user: User,
-    password: Password,
-    database: Database,
-  });
-
+var con = mysql.createConnection({
+  host: Host,
+  user: User,
+  password: Password,
+  database: Database,
+});
+  
   module.exports = {
     User,
     Password,
     Host,
     Database,
     Port,
+    mysql,
+    con,
   }
+ 

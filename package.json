@@ -9,6 +9,7 @@
   "author": "finkegabriel",
   "license": "ISC",
   "dependencies": {
-    "mysql": "^2.16.0"
+    "mysql": "^2.16.0",
+    "node-mysql": "^0.4.2"
   }
 }
