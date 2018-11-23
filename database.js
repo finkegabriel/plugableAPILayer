@@ -1,14 +1,25 @@
 var mysql = require('mysql-node');
 
-const dbConfig = new db({
-    user: config.db.user,
-    password: config.db.password,
-    database: config.db.database,
-    host: config.db.host,
-    port: config.db.port,
-    max: config.db.max,
-    idleTimeoutMillis: config.db.idleTimeoutMillis,
+module.exports = {
+User,
+Password,
+Host,
+Database,
+Port  
+}
+
+const dbConfig = {
+    user: User,
+    password: Password,
+    database: Database,
+    host: Host,
+    port: Port,
+  };
+
+  var con = mysql.createConnection({
+    host: Host,
+    user: User,
+    password: Password,
+    database: Dtabase,
   });
 
-  
-  

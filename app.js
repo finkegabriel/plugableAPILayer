@@ -1,2 +1,2 @@
-const config = require('database.js');
+const dbConfig = require('./database.js');
 
