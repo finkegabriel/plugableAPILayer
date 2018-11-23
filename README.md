@@ -1,8 +1,12 @@
-H1 batteries not included
+batteries not included
 
-Alt-H2 
+complete mysql data fields 
 
+```
 Host = '',
 Database = '',
 User = '',
 Password = '';
+```
+
+then run > node app.js
