@@ -1,6 +1,6 @@
-batteries not included
+Batteries not included
 
-complete mysql data fields 
+Complete mysql data fields 
 
 ```
 Host = '',
@@ -9,4 +9,5 @@ User = '',
 Password = '';
 ```
 
-then run > node app.js
+Then run 
+> node app.js
