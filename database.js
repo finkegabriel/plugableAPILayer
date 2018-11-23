@@ -25,6 +25,7 @@ if (!err) {
     console.log("Error while connecting with database");
 }
 });
+
   module.exports = {
     User,
     Password,
@@ -34,4 +35,3 @@ if (!err) {
     mysql,
     con,
   }
- 
