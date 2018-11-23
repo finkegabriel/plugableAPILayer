@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 
-Host = '',
+Host = 'localhost',
 Database = '',
 User = '',
 Password = '';
