@@ -1,4 +1,4 @@
-var mysql = require('mysql-node');
+var mysql = require('mysql');
 
 var User,
 Password,
@@ -28,8 +28,3 @@ const dbConfig = {
     Database,
     Port,
   }
-  
-con.connect(function(err){
-  if(err) throw err;
-  console.log("Connected!");
-});
