@@ -1,6 +1,9 @@
 var mysql = require('mysql');
+var passport = require('passport');
+var session = require('express-session');
+var MySQLStore = require('express-mysql-session')(session);
 
-Host = 'localhost',
+Host = '',
 Database = '',
 User = '',
 Password = '';
@@ -18,6 +21,15 @@ var con = mysql.createConnection({
   database: Database,
 });
 
+var options ={
+  host: Host,
+  user: User,
+  password: Password,
+  database: Database,
+};
+
+var sessionStore = new MySQLStore(options);
+
 con.connect(function (err) {
 if (!err) {
     console.log("Database is connected");
@@ -34,4 +46,5 @@ if (!err) {
     Port,
     mysql,
     con,
+    sessionStore,
   }
